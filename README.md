@@ -1,16 +1,27 @@
-# React + Vite
+# CultureDrop | Explore the World, One City at a Time
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<img width="1346" height="565" alt="cultureDrop" src="https://github.com/user-attachments/assets/1c576a48-77e0-4332-ad97-219cb3bfc065" />
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠 Tech Stack
 
-## React Compiler
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap_5-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+[![Visit Website](https://img.shields.io/badge/Visit-Website-2ea44f?style=for-the-badge&logo=vercel&logoColor=white)](https://culturedrop10.netlify.app/)
 
-## Expanding the ESLint configuration
+##  Overview
+Discover cities through their sights, food, and stories. Built with React, Vite, and Bootstrap 5, powered by live data from Pexels, Spoonacular, OpenTripMap, Wikipedia, and Geoapify.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features
+
+- **City Explorer** : Search and discover cities around the world in one place
+- **Stunning Visuals** : High-quality city and landmark photos powered by the Pexels API
+- **Top Sights & Attractions** : Explore points of interest using OpenTripMap data
+- **Local Food & Recipes** : Get cuisine and recipe inspiration via the Spoonacular API
+- **City Stories & History** : Rich background info and descriptions sourced from Wikipedia
+- **Smart Location Data** : Accurate geocoding and place search powered by Geoapify
+
+
