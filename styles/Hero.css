@@ -1,0 +1,89 @@
+#carouselExampleDark {
+  height: 100vh;
+  overflow: hidden;
+}
+
+#carouselExampleDark .carousel-item img {
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+.carousel-indicators button[data-bs-target] {
+  width: 170px;        
+  height: 120px;
+  padding: 0;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  overflow: hidden;
+  opacity: 0.6;
+  background: none;       
+  transition: opacity .2s, border-color .2s;  
+}
+
+.carousel-indicators button[data-bs-target] img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      
+  display: block;
+}
+
+.carousel-indicators button[data-bs-target].active {
+  opacity: 1;
+  border-color: #fff;
+}
+
+.carousel-indicators button[data-bs-target]:hover {
+  opacity: 1;
+}
+
+.carousel-indicators {
+  margin-bottom: 40px;
+  gap: .5rem;
+  justify-content: flex-end !important;  
+  padding-right: 0.001rem !important; 
+  
+}
+
+.carousel-caption {
+   margin-top: 5%;
+   max-width: 90%;
+}
+
+@media (min-width: 768px) {
+  .carousel-caption {
+    max-width: 480px;
+  }
+}
+
+.hero-title {
+    font-size: clamp(1.4rem, 1.1rem + 2vw, 3.5rem);
+    line-height: 1.15;
+}
+
+.hero-btn {
+    font-size: 0.85rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .hero-btn {
+        font-size: 1rem;
+        padding-top: 0.6rem;
+        padding-bottom: 0.6rem;
+    }
+}
+
+
+@media (max-width: 576px) {
+  .carousel-indicators button[data-bs-target] {
+    width: 50px;
+    height: 35px;
+  }
+
+  .carousel-indicators {
+    margin-bottom: 60px;
+    
+  }
+}

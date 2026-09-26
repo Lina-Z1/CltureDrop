@@ -1,0 +1,318 @@
+ 
+.voy-page {
+  --dp-bg: #1c1812;
+  --dp-surface: #26201a;
+  --dp-surface-2: #2f271f;
+  --dp-cream: #f6ecdb;
+  --dp-text: #f2e8d8;
+  --dp-muted: #a99a84;
+  --dp-line: rgba(246, 236, 219, 0.12);
+  --dp-accent: #e2833f;
+  --dp-accent-soft: #3a2c1c;
+  --dp-herb: #93a86a;
+  --dp-herb-soft: #2b3021;
+
+  background: var(--dp-bg);
+  min-height: 100vh;
+  color: var(--dp-text);
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.voy-page * {
+  box-sizing: border-box;
+}
+
+.voy-loader {
+  color: var(--dp-accent);
+  width: 2.75rem;
+  height: 2.75rem;
+  border-width: 3px;
+}
+
+.voy-fail {
+  color: var(--dp-accent);
+  padding: 4rem 0;
+}
+
+ 
+.voy-banner {
+  position: relative;
+  min-height: 520px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+}
+
+.voy-banner-shade {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to top, var(--dp-bg) 0%, rgba(28, 24, 18, 0.55) 45%, rgba(28, 24, 18, 0.15) 100%),
+    linear-gradient(120deg, rgba(226, 131, 63, 0.18), transparent 60%);
+}
+
+.voy-banner-body {
+  position: relative;
+  z-index: 2;
+  padding-bottom: 3rem;
+}
+
+.voy-banner-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--dp-accent);
+  margin-bottom: 0.75rem;
+}
+
+.voy-banner-kicker::before {
+  content: '';
+  width: 22px;
+  height: 1px;
+  background: var(--dp-accent);
+  display: inline-block;
+}
+
+.voy-banner-heading {
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  line-height: 1.05;
+  color: var(--dp-cream);
+  margin: 0 0 0.85rem;
+  letter-spacing: -0.01em;
+}
+
+.voy-banner-blurb {
+  color: var(--dp-muted);
+  max-width: 58ch;
+  line-height: 1.75;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.voy-chip {
+  background: rgba(246, 236, 219, 0.08);
+  border: 1px solid var(--dp-line);
+  color: var(--dp-cream);
+  border-radius: 999px;
+  padding: 0.35rem 0.9rem;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.72rem;
+  backdrop-filter: blur(6px);
+} 
+.voy-block {
+  padding: 2.25rem 0;
+  border-top: 1px solid var(--dp-line);
+}
+
+.voy-block-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--dp-accent);
+  margin-bottom: 0.5rem;
+}
+
+.voy-block-kicker::before {
+  content: '';
+  width: 18px;
+  height: 1px;
+  background: var(--dp-accent);
+  display: inline-block;
+}
+
+.voy-block-heading {
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: var(--dp-cream);
+  margin: 0 0 1.75rem;
+}
+
+.voy-overview-copy {
+  color: var(--dp-muted);
+  line-height: 1.85;
+  font-size: 0.95rem;
+  max-width: 74ch;
+}
+
+.voy-photos-head {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 2.5rem;
+}
+
+.voy-photos-lead {
+  color: var(--dp-muted);
+  font-size: 0.95rem;
+}
+
+.voy-photo {
+  height: 220px;
+  object-fit: cover;
+  border-radius: 16px;
+  width: 100%;
+  border: 1px solid var(--dp-line);
+  transition: transform 0.3s ease;
+}
+
+.voy-photo:hover {
+  transform: translateY(-4px) scale(1.01);
+}
+
+#voyPhotoSlider .carousel-control-prev,
+#voyPhotoSlider .carousel-control-next {
+  width: 44px;
+  height: 44px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: var(--dp-surface);
+  border: 1px solid var(--dp-accent);
+  opacity: 1;
+}
+
+#voyPhotoSlider .carousel-control-prev { left: -22px; }
+#voyPhotoSlider .carousel-control-next { right: -22px; }
+
+#voyPhotoSlider .carousel-control-prev-icon,
+#voyPhotoSlider .carousel-control-next-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+@media (max-width: 768px) {
+  #voyPhotoSlider .carousel-control-prev { left: 4px; }
+  #voyPhotoSlider .carousel-control-next { right: 4px; }
+}
+
+ 
+.voy-dish-img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--dp-cream);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+  transition: transform 0.25s ease;
+}
+
+.voy-dish-img:hover {
+  transform: scale(1.06);
+}
+
+.voy-dish-name {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--dp-text);
+  line-height: 1.3;
+}
+
+ 
+.voy-spot-card {
+  background: var(--dp-surface);
+  border-radius: 20px;
+  border: 1px solid var(--dp-line);
+  padding: 1.6rem 1rem;
+  text-align: center;
+  transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+  height: 100%;
+}
+
+.voy-spot-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--dp-accent);
+  background: var(--dp-surface-2);
+}
+
+ 
+.voy-spot-icon {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 1rem;
+}
+
+.voy-spot-icon::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(150deg, var(--dp-accent) 0%, #b5591f 100%);
+  border-radius: 62% 38% 55% 45% / 46% 60% 40% 54%;
+}
+
+.voy-spot-icon img {
+  position: relative;
+  z-index: 1;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  padding: 3px;
+  background: var(--dp-cream);
+}
+
+.voy-spot-tag {
+  background: var(--dp-accent-soft);
+  color: var(--dp-accent);
+  font-size: 0.65rem;
+  font-family: 'DM Mono', monospace;
+  border-radius: 999px;
+  padding: 0.2rem 0.65rem;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+}
+
+.voy-spot-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--dp-cream);
+  margin-bottom: 0.25rem;
+}
+
+.voy-spot-link {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--dp-accent);
+  margin-bottom: 0;
+}
+
+ 
+@media (max-width: 768px) {
+  .voy-banner {
+    min-height: 340px;
+  }
+
+  .voy-banner-heading {
+    font-size: 2rem;
+  }
+
+  .voy-photo {
+    height: 170px;
+  }
+
+  .voy-block-heading {
+    font-size: 1.3rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .voy-photo,
+  .voy-spot-card {
+    transition: none;
+  }
+}
